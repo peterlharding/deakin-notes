@@ -1,0 +1,34 @@
+
+# IDEs
+.vscode/
+.idea/
+
+# Archivesd
+*.gz
+*.tar
+*.tz
+*.zip
+*.7z
+
+# macOS
+.DS_Store
+
+# Just Ignore
+*.x
+*.ignore
+
+# Logs
+*.log
+
+# Node
+node_modules/
+buid/
+
+# Python
+__pycacne__/
+
+
+# LaTeX
+*.aux
+*.synctex.gz
+
