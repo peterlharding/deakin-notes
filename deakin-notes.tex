@@ -1,5 +1,7 @@
 \documentclass[]{article}
 \usepackage{amsmath}
+\usepackage{ amssymb }
+
 %opening
 \title{}
 \author{Peter Harding}
@@ -59,18 +61,64 @@ Deakin Uni Physics for the Life Sciences Notes
 	a^2 &= b^2 +c^2
 \end{align*} 
 
+\newpage
+
+
+\section{Formulae}
+
+\subsection{Area and Volume Formulae}
+
+\begin{align*}
+	\text{Circle} \qquad  A &= 2 \pi r  & V &= \pi r^2 \\
+	\text{Cylinder} \qquad  A &= 2 \pi r h &  V &= \pi r^2 h \\
+	\text{Sphere} \qquad  A &= 4 \pi r^2 &  V &= \frac{4}{3} \pi r^3 \\
+	\text{Cube} \qquad  A &= 6 h^2 &  V &= h^2 \\
+\end{align*} 
+
+\subsection{Length of a vector}
+
+\begin{align*}
+	\text{Length of a Vector} \qquad \left|  V \right| &= \sqrt{V^2_x + V^2_y}
+\end{align*}
+
+\newpage
+
+
 
 \section{Kinemetics}
 
 \begin{align*}
+	\text{Equations of Motion} \qquad  \Delta x &= x_j = x_j \\
+	\nu &= \frac{\Delta{x}}{\Delta{t}} \\
+	a &= \frac{\Delta v}{\Delta T} \\
+	v^2_f &= v^2_i + 2 a \Delta X \\
+	v_f &= v_i + a \Delta t \\
+	\Delta x &= v_i \Delta t  + \frac{1}{2} a \Delta t^2 \\
+\\
+\\
+	\text{Net Force} \qquad F_{net} &= F_1 + F_2 + ... + F_N \\
+	\\
+	\text{Newton's Second Law} \qquad F &= m a \\
+	\\
+	\text{Drag Force} \qquad D &= \frac{1}{2} C_d \rho v^2 A \\
+	\\
+	\text{Friction Force} \qquad f_{s,max} &= \mu_s n & f_k &= \mu_k n \\
+	\\
+	\text{Spring Force  (Hook's Law)} \qquad F &= -k x \\
+	\\
+	\text{Conservation of Energy (without transfer)} \qquad \Delta K +  \Delta U +  \Delta E_{th} + &= 0 \\
+	\text{Conservation of Energy (with transfer)} \qquad \Delta K +  \Delta U +  \Delta E_{th} + &= w + q \\
 	\text{Kinetic Energy:} \qquad K &= \frac{1}{2} mv^2 \\
-	\text{Gravitational Potential Energy:} \qquad U_g &= \mgy \\
+	\text{Gravitational Potential Energy:} \qquad U_g &= mgy \\
 	\text{Spring Potential Energy:} \qquad U_x &= \frac{1}{2} kx^2 \\
 	\text{Work:} \qquad W &= F d (cos \theta) \\
 	\text{Power:} \qquad P &= \frac{\Delta E}{\Delta t} \\
 	\text{Mechanical Power:} \qquad P &= \frac{W}{\Delta t} = F \nu \\
-\text{Energy Efficiency:} \qquad e &= \frac{E_{out}}{E_{in}} \\
-\end{align*} 
+	\text{Energy Efficiency:} \qquad e &= \frac{E_{out}}{E_{in}} \\
+\end{align*}
+
+\newpage
+
 
 \subsection{Thermal Properties}
 
@@ -78,9 +126,148 @@ Deakin Uni Physics for the Life Sciences Notes
 T &= \frac{2}{3} \frac{K_{avg}}{k_b} \\
 \text{Thermal expansion (volume):} \qquad \Delta V &= \beta V, \Delta T \\
 \text{Thermal expansion (linear):} \qquad \Delta L &= \alpha L, \Delta T \\
+\text{Gas Pressure} \qquad p &= \frac{2}{3} \frac{N}{V} K_{avg} \\
+\text{Ideal Gas Law (multiple forms)} \qquad p V &= N K_b T &= n N_A k_b T &= n R T  \\
+\text{Mass of a Substance} \qquad  m &= \rho V \\
+\text{Work Done by a Gas} \qquad W_{gas} &= p \Delta V \\
+\text{Energy Conservation for Interacting Systems} \qquad Q_{net} &= Q_1 + Q_2 + \ldots = 0 \\
+\\
+\text{Heat Equations for Solids and Liquids} \qquad Q &= m C \Delta T \\
+\\
+\text{Heat Equations for Gasses}  \\
+\text{Constant Volume} \qquad Q &= n C_v \Delta T \\
+\text{Constant Pressure} \qquad Q &= m C _p\Delta T \\
+\\
+\text{Heat Required for a Phase Change}  \\
+\text{Fusion (melting.freezing)} \qquad Q &= \pm M L_f \\
+\text{Vapourization (boiling/conmdensing)} \qquad Q &= \pm M L_v \\
+\\
+\text{Rate of Conduction Across a Temperature Gradient} \qquad Q &= \frac{k A}{L} \Delta T \\
+\\
+\text{Rate of Radiative Heat Transfer} \qquad \frac{Q}{\Delta T} &= e \ \sigma A T^4 \\
+\\
 \end{align*} 
 
+\newpage
 
+
+\section{Fluids}
+
+\begin{align*}
+	\text{Fluid Pressure} \qquad p &= \frac{F}{A} \\
+	\text{Hydrostatic Pressure} \qquad p &= p_0 + \rho g d \\
+	\text{Gauge Pressure} \qquad p_g &= p - p_{atm} \\
+	\text{Pressure Gradiaent in a Viscous Fluid} \qquad \Delta p &= 8 \pi \nu \frac{L V_{avg}}{A} \\
+	\text{Buoyancy Force} \qquad F_b &= \rho_f V_f g \\
+\end{align*}
+	
+\newpage
+
+
+\section{Oscillations}
+
+\begin{align*}
+	\text{Frequency-period relationship} \qquad f &= \frac{1}{T} \\
+	\text{Frequency of mass-spring oscillator} \qquad f &= \frac{1}{2 \pi} \sqrt{\frac{k}{m}} \\
+	\text{Frequency of pendulum oscillator (small angle of displacement)} \qquad f &= \frac{1}{2 \pi} \sqrt{\frac{g}{L}} \\
+\end{align*}
+
+\newpage
+
+
+\section{Waves}
+
+\begin{align*}
+	\text{Wave speed of a stretched string} \qquad v_{string} &= \sqrt{\frac{T_s}{\mu}} \\
+	\text{Wave speed in a gas} \qquad v_{sound} &= \sqrt{\frac{\gamma R T}{M}} \\
+	\text{Wave speed} \qquad v &= f \lambda = \frac{\lambda}{T} \\
+	\text{Sound intensity} \qquad \beta &= (10 dB) log_{10}\big(\frac{I}{I_0} \big) I = \frac{P_{source}}{4 \pi r^2} \\
+\end{align*}
+
+\newpage
+
+
+\section{Doppler Effect}
+
+\begin{align*}
+	\text{Observed frequency (source approaching at $v_s$)} \qquad f_{+} &= \frac{f_0}{1 - v_a/v} \\
+	\text{Observed frequency (source receding at $v_s$)} \qquad f_{-} &= \frac{f_0}{1 + v_a/v} \\
+	\text{Observed frequency (observer approaching source at $v_o$)} \qquad f_{+} &= \frac{1 + v_o}{v} f_0 \\
+	\text{Observed frequency (observer receding from source at $v_0$)} \qquad f_{-} &= \frac{1 - v_o}{v} f_0 \\
+\end{align*}
+
+\newpage
+
+
+
+\section{Optics}
+
+\begin{align*}
+	\text{Speed of light in a transparent mediun} \qquad v &= \frac{c}{n} \\
+	\text{Snall's Law} \qquad n_1 sin \ \theta_1  &= n_2 sin \ \theta_2 \\
+	\text{Critical angle (total internal reflection)} \qquad \theta_c &= sin^{-1} \Big( \frac{n_2}{n_1} \Big) \\
+	\text{Optical magnification} \qquad m &= \frac{s^{'}}{s} = \frac{h^{'}}{h}\\
+	\text{Len power} \qquad P &= \frac{1}{f} \\
+	\text{Thin lens equation} \qquad \frac{1}{s} + \frac{1}{s^{'}} &= \frac{1}{f} \\
+	\text{Light gathering ability} \qquad f - \text{number} &= \frac{f}{d} \\
+	\text{Simple magnifier} \qquad M &= \frac{25 \  \text{cm}}{f} \\
+\end{align*}
+
+\newpage
+
+
+
+\section{electric Fields and Forces}
+
+\begin{align*}
+	\text{Coulomb's law} \qquad F_{1 on 2} &= F_{2 on 1} = \frac{K \left| q_1 \right| \left| q_2 \right| }{r^2} \\
+	\text{Electric field at point defined by charge $q$} \qquad E(x,y,z) &= \frac{F_{on\ q}(x,y,z)}{q} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{xxx} \qquad p &= \frac{F}{A} \\
+\end{align*}
+
+\newpage
+
+
+\section{Quantum Numbers}
+
+\begin{align*}
+	\text{Bohr energy of an hydrogen atom} \qquad E_n &= \frac{13.6 \ eV}{n^2} \quad \text{where $n$ = 1, 2, 3, 4, ...} \\
+	\text{Angular momentum of an electron's orbit} \qquad L &= \sqrt{\ell(\ell+1)}\hbar \quad \text{where $\ell$ = 0, 1, 2, 3, ..., n-1} \\
+	\text{Magnetic quantum number} \qquad m &= -\ell, -\ell_{+1}, ....0, \ell_{-1}, \ell \\
+	\text{Spin quantim number} \qquad m_s &= -\frac{1}{2} \ \text{or} \  +\frac{1}{2} \\
+\end{align*}
+
+%% https://tex.stackexchange.com/questions/231322/how-to-get-the-lowercase-calligraphic-symbols
+
+\newpage
+
+
+\section{Nuclear Physics}
+
+\begin{align*}
+	\text{Half life} \qquad N &= N_0 {\Big( \frac{1}{2} \Big)}^{\frac{t}{t_{1/2}}} \\
+	\text{Exponential decay} \qquad N &= N_0 \ e^{-\frac{t}{\tau}} \\
+	\text{Activity} \qquad R &= \frac{N}{\tau} = \frac{0.693 \ N}{t_{1/2}} \\
+	\text{Binding energy} \qquad B &= ( Z m_H + N m_n - m_{atom} ) \times (931.49 \ M eV/u) \\
+\end{align*}
+
+\newpage
+
+
+\section{Periodic Tables}
 
 
 \end{document}
