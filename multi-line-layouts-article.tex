@@ -1,0 +1,33 @@
+\documentclass{article}
+
+\usepackage{mathtools,eqparbox}
+
+\begin{document}
+	
+	% Original alignment
+	\begin{align}
+		\cdots\text{ABB}&\bigg|\text{BAABB}&\bigg|\text{AAABB}&\bigg|\text{BB}&\bigg|\text{BB}&\bigg|\text{ABABAABABB}&\bigg|\text{AA}\cdots \\
+		n_0 &  n_1 & n_2 & n_3 & n_4 & n_5
+	\end{align}
+	
+	% Updated alignment
+	\newcommand{\setvert}{\eqmakebox[eqmb]{$\bigg|$}}
+	\newcommand{\setsub}[1]{\eqmakebox[eqmb]{$\mathclap{#1}$}}
+	\begin{alignat}{6}
+		\cdots\text{ABB}
+		&\setvert\text{BAABB}
+		&&\setvert\text{AAABB}
+		&&\setvert\text{BB}
+		&&\setvert\text{BB}
+		&&\setvert\text{ABABAABABB}
+		&&\setvert\text{AA}
+		\cdots \\
+		&\setsub{n_0}
+		&&\setsub{n_1}
+		&&\setsub{n_2}
+		&&\setsub{n_3}
+		&&\setsub{n_4}
+		&&\setsub{n_5}
+	\end{alignat}
+	
+\end{document}

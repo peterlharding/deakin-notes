@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage[usestackEOL]{stackengine}
+
+\newcommand\coresym[3][1]{\phantom{#3}\scalebox{#1}{$#2$}#3}
+
+\setstackgap{L}{.9\baselineskip}
+
+\stackMath
+
+\begin{document}
+	\[
+		\Centerstack{
+			\mathsf{G} \\
+			\\
+			\coresym[1.3]{*}{^1_2} \\
+			\\
+			\mathsf{G}
+		} =  ax + b
+	\]
+\end{document}

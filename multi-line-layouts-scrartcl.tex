@@ -1,0 +1,20 @@
+\documentclass{scrartcl}
+
+\usepackage{mathtools,amssymb}
+
+\newcommand\vertwithin[1]{%
+	{\mathmakebox[\widthof{\ensuremath{{}#1{}}}][c]{{\biggm\vert}}}}%
+
+\begin{document}
+	
+	\begin{align}
+		... \  \text{ABB} & \vertwithin{n_0} \text{BAABB} & & \vertwithin{n_1} \text{AAABB}& &\vertwithin{n_2} \text{BB} & & \vertwithin{n_3} \text{BB} & & \vertwithin{n_4} \text{ABABAABABB} & & \vertwithin{n_5} \text{AA} \   ... \\
+		& n_0 & & n_1 & & n_2 & & n_3 & & n_4 & & n_5
+	\end{align}
+	
+	\begin{alignat}{6}
+		... \  \text{ABB} & \vertwithin{n_0} \text{BAABB} & & \vertwithin{n_1} \text{AAABB}& & \vertwithin{n_2} \text{BB} & & \vertwithin{n_3} \text{BB} & & \vertwithin{n_4} \text{ABABAABABB} & & \vertwithin{n_5} \text{AA} \  ... \\
+		& n_0 & & n_1 & & n_2 & & n_3 & & n_4 & & n_5
+	\end{alignat}
+	
+\end{document} 

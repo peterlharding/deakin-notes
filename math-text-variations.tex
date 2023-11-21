@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\usepackage{tabularray}
+\usepackage{amsmath}
+
+\begin{document}
+	
+	\section{array}
+	
+	\begin{equation}
+		\left\{
+		\begin{array}{@{\hskip2pt}c@{\hskip2pt}}
+			\text{morphisms from } V \text{ to } W\\
+			k-\text{algebra blablabla}
+		\end{array}
+		\right\}
+		\longleftrightarrow
+		\left\{
+		\begin{array}{@{\hskip2pt}c@{\hskip2pt}}
+			\text{morphisms from } V \text{ to } W\\
+			k-\text{algebra blablabla}
+		\end{array}
+		\right\}
+	\end{equation}
+	
+	\section{tabular}
+	
+	\begin{equation}
+		\left\{
+		\begin{tabular}{@{\hskip2pt}c@{\hskip2pt}}
+			morphisms from $V$ to $W$\\
+			$k$-algebra blablabla
+		\end{tabular}
+		\right\}
+		\longleftrightarrow
+		\left\{
+		\begin{tabular}{@{\hskip2pt}c@{\hskip2pt}}
+			morphisms from $V$ to $W$\\
+			$k$-algebra blablabla
+		\end{tabular}
+		\right\}
+	\end{equation}
+	
+	\section{tabularray}
+	
+	\begin{equation}
+		\left\{
+		\begin{tblr}{colspec={c},colsep={2pt}}
+			\text{morphisms from } V \text{ to } W\\
+			k-\text{algebra blablabla}
+		\end{tblr}
+		\right\}
+		\longleftrightarrow
+		\left\{
+		\begin{tblr}{colspec={c},colsep={2pt}}
+			\text{morphisms from } V \text{ to } W\\
+			k-\text{algebra blablabla}
+		\end{tblr}
+		\right\}
+	\end{equation}
+	
+\end{document}

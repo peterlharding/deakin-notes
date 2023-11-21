@@ -1,11 +1,19 @@
 \documentclass[]{article}
 \usepackage{amsmath}
 \usepackage{ amssymb }
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\setlength{\footskip}{10pt}
 
 %opening
 \title{}
 \author{Peter Harding}
 
+\usepackage{calc}
+\setlength{\footskip}{\paperheight
+	-(1in+\voffset+\topmargin+\headheight+\headsep+\textheight)
+	-0.5in}
+	
 \begin{document}
 
 \maketitle
@@ -217,26 +225,32 @@ T &= \frac{2}{3} \frac{K_{avg}}{k_b} \\
 
 
 
-\section{electric Fields and Forces}
+\section{Electric Fields and Forces}
 
 \begin{align*}
 	\text{Coulomb's law} \qquad F_{1 on 2} &= F_{2 on 1} = \frac{K \left| q_1 \right| \left| q_2 \right| }{r^2} \\
 	\text{Electric field at point defined by charge $q$} \qquad E(x,y,z) &= \frac{F_{on\ q}(x,y,z)}{q} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
-	\text{xxx} \qquad p &= \frac{F}{A} \\
+	\text{Electric field at distance $r$ from charge $q$} \qquad E &= \Big( \frac{K \lvert q \rvert}{r^2}, \Bigg[ \frac{\text{away from $q$ if $q > 0$}}{\text{toward $q$ if $q < 0$}} \Bigg]  \Big) \\
+	\text{Electric field in parallel plate capacity} \qquad E_{capacitor} &= \frac{Q}{\epsilon_0 A} \\
+	\text{Force on charge $q$} \qquad F_{on\ q} &= q E \\
+	\text{Electric potential energy} \qquad U_{elec} &= q V \\
+	\text{Conservation of energy in charge interactions}  \qquad \Delta K + q \Delta V &= 0 \\
+	\text{Electric potential energy of two charges}  \qquad U_{elec} &= K \frac{q q^{'}}{r} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r} \\
+	\text{Electric potential at distance $r$ from charge $q$}  \qquad	V &= K \frac{q}{r} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r} \\
+	\text{Electric potential at distance $r$ from center of sphere (charge $Q$, radius $R$)} \\
+	\qquad V &= K \frac{Q}{r} = \frac{1}{4 \pi \epsilon_0} \frac{Q}{r}, r > R \\
+	\text{Electric field strength} \qquad E &= \frac{\Delta V}{d} \\
+	\text{Charge on a capacitor}  \qquad Q &= C \Delta V_C \\
+	\text{Capacitance of parallel plate capacitor} \qquad C &= \frac{\epsilon_0 A}{d} \\
+	\text{Capacitance of parallel plate capacitor with dialectric} \\
+	 C &= \frac{\kappa \epsilon_0 A}{d} \\
+	\text{Electric potential of capacitor with charge $Q$ and potential difference $\Delta V$} \\
+	 U_C &= \frac{1}{2} \frac{Q^2}{C} = \frac{1}{2} C ( \Delta V_c)^2 \\
+	\text{Conservation of energy for a charge moving in a potential field} \\
+	 K_f + u_f &= K_i + u_i \\
 \end{align*}
+
+%% https://www.overleaf.com/learn/latex/Brackets_and_Parentheses
 
 \newpage
 
@@ -269,5 +283,26 @@ T &= \frac{2}{3} \frac{K_{avg}}{k_b} \\
 
 \section{Periodic Tables}
 
+\newpage
+
+\section{Examples}
+
+\[
+\left\{
+\begin{tabular}{@{}c@{}}
+	morphisms~from~$V$~to~$W$\\
+	as~algebraic~sets
+\end{tabular}
+\right\}
+\longleftrightarrow
+\left\{
+\begin{tabular}{@{}c@{}}
+	$k$-algebra homomorphisms\\
+	from $k[W]$ to $k[V]$
+\end{tabular}
+\right\}
+\]
+
+\showthe\footskip
 
 \end{document}
